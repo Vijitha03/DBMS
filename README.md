@@ -13,4 +13,5 @@
 ![image](https://user-images.githubusercontent.com/113349410/193737731-68a3f94d-c9e9-4a8e-b08d-02b44874ab43.png)
 
 ### exp 02
-![image](https://user-images.githubusercontent.com/113349410/193537435-448d01bb-b453-401d-ada4-c41aee8494af.png)
+![image](https://user-images.githubusercontent.com/113349410/193738411-b87cfcd8-9d6e-4e08-b8f0-e2599ec4bbfe.png)
+
