@@ -28,4 +28,6 @@
 ![image](https://user-images.githubusercontent.com/113349410/193748065-3ee48227-68be-4db3-9c36-ae7ca70845a2.png)
 ![image](https://user-images.githubusercontent.com/113349410/193748129-262d928e-a683-43a9-9efb-9b078a82d8dd.png)
 
+#### (ii)
+![image](https://user-images.githubusercontent.com/113349410/193749497-8876c3af-9a77-4b91-adaf-e1e73ec5673f.png)
 
