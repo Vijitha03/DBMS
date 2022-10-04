@@ -63,3 +63,23 @@ mysql> desc department;
 | deptname | varchar(15) | YES  |     | NULL    |       |
 | depthead | varchar(4)  | YES  |     | NULL    |       |
 +----------+-------------+------+-----+---------+-------+
+
+mysql> alter table courses add primary key(CourseNo);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table courses add check(SemNo>=1&&SemNo<=6);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc courses;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| CourseNo   | varchar(3)  | NO   | PRI |         |       |
+| CourseDesc | varchar(14) | YES  |     | NULL    |       |
+| CourseType | char(1)     | YES  |     | NULL    |       |
+| SemNo      | char(1)     | YES  |     | NULL    |       |
+| HallNo     | varchar(4)  | YES  |     | NULL    |       |
+| FacNo      | varchar(4)  | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
