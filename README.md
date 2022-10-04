@@ -30,4 +30,8 @@
 
 #### (ii)
 ![image](https://user-images.githubusercontent.com/113349410/193749497-8876c3af-9a77-4b91-adaf-e1e73ec5673f.png)
+#### (iii)
+![image](https://user-images.githubusercontent.com/113349410/193766954-0b9052c4-b79c-47f4-850b-e14f44581bee.png)
+#### (iv)
+![image](https://user-images.githubusercontent.com/113349410/193768078-6be5f053-5817-4f66-94f6-facde44d492a.png)
 
