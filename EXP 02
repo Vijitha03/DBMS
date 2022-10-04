@@ -32,3 +32,20 @@ mysql> desc studentt;
 | mobile_no | int(10)     | YES  |     | NULL    |       |
 | city      | varchar(15) | YES  |     | NULL    |       |
 +-----------+-------------+------+-----+---------+-------+
+
+
+mysql> alter table faculty add primary key(fac_no);
+mysql> use faculty;
+Database changed
+mysql> desc faculty;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| facno    | varchar(4)  | NO   | PRI |         |       |
+| facname  | varchar(15) | YES  |     | NULL    |       |
+| gender   | char(1)     | YES  |     | NULL    |       |
+| dob      | date        | YES  |     | NULL    |       |
+| doj      | date        | YES  |     | NULL    |       |
+| mobileno | int(10)     | YES  |     | NULL    |       |
+| dept     | char(10)    | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
