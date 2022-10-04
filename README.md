@@ -45,3 +45,8 @@
 ![image](https://user-images.githubusercontent.com/113349410/193781674-d5249237-95ef-47fd-bead-f3332afce2d4.png)
 #### (ii)
 ![image](https://user-images.githubusercontent.com/113349410/193782796-fbcb7165-5afb-4d3b-a05c-91f57900c89d.png)
+#### (i)
+![image](https://user-images.githubusercontent.com/113349410/193783121-492e7e48-1cb1-4e21-854b-0f4cbc541634.png)
+#### (ii)
+![image](https://user-images.githubusercontent.com/113349410/193783424-a3107583-7053-4a00-830d-cd305b7a91ec.png)
+
