@@ -1,0 +1,33 @@
+mysql> desc colleges;
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| sno    | int(10)  | YES  |     | NULL    |       |
+| name   | char(15) | YES  |     | NULL    |       |
+| regno  | int(10)  | YES  |     | NULL    |       |
+| branch | char(10) | YES  |     | NULL    |       |
+| age    | int(10)  | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+mysql>  insert into colleges(sno,name,regno,branch,age) values(1,'lucky',192120018,'bio',22);
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into colleges values (2,'john',12356784,'eee',20);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into colleges values (3,'satya',192321431,'ece',19);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from colleges;
++------+-------+-----------+--------+------+
+| sno  | name  | regno     | branch | age  |
++------+-------+-----------+--------+------+
+|    1 | lucky | 192120018 | bio    |   22 |
+|    2 | john  |  12356784 | eee    |   20 |
+|    3 | satya | 192321431 | ece    |   19 |
++------+-------+-----------+--------+------+
+3 rows in set (0.00 sec)
+mysql> update colleges set regno=192120018 where name='lucky';
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
