@@ -32,3 +32,57 @@ mysql> desc studentt;
 | city      | varchar(15) | YES  |     | NULL    |       |
 +-----------+-------------+------+-----+---------+-------+
 6 rows in set (0.01 sec)
+
+mysql> use faculty;
+Database changed
+mysql> desc faculty;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| facno    | varchar(4)  | NO   | PRI |         |       |
+| facname  | varchar(15) | YES  |     | NULL    |       |
+| gender   | char(1)     | YES  |     | NULL    |       |
+| dob      | date        | YES  |     | NULL    |       |
+| doj      | date        | YES  |     | NULL    |       |
+| mobileno | int(10)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+mysql> use department;
+Database changed
+mysql> desc department;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| dept_no  | varchar(4)  | YES  |     | NULL    |       |
+| deptname | varchar(15) | YES  |     | NULL    |       |
+| depthead | varchar(4)  | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+mysql> use courses;
+Database changed
+mysql> desc courses;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| CourseNo   | varchar(3)  | YES  |     | NULL    |       |
+| CourseDesc | varchar(14) | YES  |     | NULL    |       |
+| CourseType | char(1)     | YES  |     | NULL    |       |
+| SemNo      | char(1)     | YES  |     | NULL    |       |
+| HallNo     | varchar(4)  | YES  |     | NULL    |       |
+| FacNo      | varchar(4)  | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+
+mysql> alter table faculty add dept char(10);
+Query OK, 1 row affected (0.02 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> desc faculty;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| facno    | varchar(4)  | NO   | PRI |         |       |
+| facname  | varchar(15) | YES  |     | NULL    |       |
+| gender   | char(1)     | YES  |     | NULL    |       |
+| dob      | date        | YES  |     | NULL    |       |
+| doj      | date        | YES  |     | NULL    |       |
+| mobileno | int(10)     | YES  |     | NULL    |       |
+| dept     | char(10)    | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
