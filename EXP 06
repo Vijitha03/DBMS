@@ -56,3 +56,22 @@ mysql> select max(scores),min(scores) from coursedetails;
 |          98 |          45 |
 +-------------+-------------+
 1 row in set (0.00 sec)
+ select max(scores),min(scores),avg(scores) from coursedetails where courseno like'COO2';
++-------------+-------------+-------------+
+| max(scores) | min(scores) | avg(scores) |
++-------------+-------------+-------------+
+|          88 |          64 |     76.0000 |
++-------------+-------------+-------------+
+mysql>  select max(scores),min(scores),avg(scores) from coursedetails where courseno like'COO1';
++-------------+-------------+-------------+
+| max(scores) | min(scores) | avg(scores) |
++-------------+-------------+-------------+
+|          98 |          45 |     75.6667 |
++-------------+-------------+-------------+
+
+mysql> select max(scores),min(scores),avg(scores) from coursedetails where courseno like'CO21';
++-------------+-------------+-------------+
+| max(scores) | min(scores) | avg(scores) |
++-------------+-------------+-------------+
+|          79 |          55 |     67.0000 |
++-------------+-------------+-------------+
