@@ -31,3 +31,30 @@ mysql> select * from colleges;
 mysql> update colleges set regno=192120018 where name='lucky';
 Query OK, 0 rows affected (0.00 sec)
 Rows matched: 1  Changed: 0  Warnings: 0
+mysql> insert into faculty values(12,'ramu','m',19870911,20110809,987654356,'cse');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into faculty values(44,'siva','m',19990806,20160901,989867454,'bio');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from faculty;
++-------+----------+--------+------------+------------+-----------+------+
+| facno | facname  | gender | dob        | doj        | mobileno  | dept |
++-------+----------+--------+------------+------------+-----------+------+
+| 1     | lakshith | m      | 2009-04-04 | 2018-11-21 | 997665424 | NULL |
+| 12    | ramu     | m      | 1987-09-11 | 2011-08-09 | 987654356 | cse  |
+| 44    | siva     | m      | 1999-08-06 | 2016-09-01 | 989867454 | bio  |
++-------+----------+--------+------------+------------+-----------+------+
+3 rows in set (0.00 sec)
+
+mysql> delete from faculty where facname='ramu';
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from faculty;
++-------+----------+--------+------------+------------+-----------+------+
+| facno | facname  | gender | dob        | doj        | mobileno  | dept |
++-------+----------+--------+------------+------------+-----------+------+
+| 1     | lakshith | m      | 2009-04-04 | 2018-11-21 | 997665424 | NULL |
+| 44    | siva     | m      | 1999-08-06 | 2016-09-01 | 989867454 | bio  |
++-------+----------+--------+------------+------------+-----------+------+
+2 rows in set (0.00 sec)
