@@ -43,3 +43,5 @@
 ### EXP 06;
 #### (i)
 ![image](https://user-images.githubusercontent.com/113349410/193781674-d5249237-95ef-47fd-bead-f3332afce2d4.png)
+#### (ii)
+![image](https://user-images.githubusercontent.com/113349410/193782796-fbcb7165-5afb-4d3b-a05c-91f57900c89d.png)
