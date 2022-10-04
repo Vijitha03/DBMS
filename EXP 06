@@ -31,3 +31,28 @@ mysql> select * from coursedetails;
 | CO21     |  189756521 | DBMS        |     79 |
 | CO21     |  189754546 | DBMS        |     55 |
 +----------+------------+-------------+--------+
+mysql> select courseno from coursedetails where scores between 50 and 80;
++----------+
+| courseno |
++----------+
+| COO2     |
+| CO21     |
+| CO21     |
++----------+
+3 rows in set (0.00 sec)
+
+mysql> select avg(scores) from coursedetails;
++-------------+
+| avg(scores) |
++-------------+
+|     73.2857 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select max(scores),min(scores) from coursedetails;
++-------------+-------------+
+| max(scores) | min(scores) |
++-------------+-------------+
+|          98 |          45 |
++-------------+-------------+
+1 row in set (0.00 sec)
