@@ -94,3 +94,9 @@ mysql> select coursedesc,count(courseno) from coursedetails;
 | STATISTICS |               7 |
 +------------+-----------------+
 1 row in set (0.00 sec)
+mysql> select courseno,coursedesc,count(regno) from coursedetails where regno like '192124187';
++----------+------------+--------------+
+| courseno | coursedesc | count(regno) |
++----------+------------+--------------+
+| COO1     | STATISTICS |            1 |
++----------+------------+--------------+
