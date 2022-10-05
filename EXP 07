@@ -1,0 +1,35 @@
+
+mysql> select courseno,count(courseno)from coursedetails group by courseno;
++----------+-----------------+
+| courseno | count(courseno) |
++----------+-----------------+
+| CO21     |               2 |
+| COO1     |               3 |
+| COO2     |               2 |
++----------+-----------------+
+
+mysql> select courseno,regno,count(coursedesc) from coursedetails group by coursedesc;
++----------+-----------+-------------------+
+| courseno | regno     | count(coursedesc) |
++----------+-----------+-------------------+
+| CO21     | 189756521 |                 2 |
+| COO2     | 195556521 |                 2 |
+| COO1     | 192124187 |                 3 |
++----------+-----------+-------------------+
+
+mysql>  select name,age,branch,regno from colleges order by regno;
++-------+------+--------+-----------+
+| name  | age  | branch | regno     |
++-------+------+--------+-----------+
+| john  |   20 | eee    |  12356784 |
+| lucky |   22 | bio    | 192120018 |
+| satya |   19 | ece    | 192321431 |
++-------+------+--------+-----------+
+
+mysql> select * from faculty order by dob;
++-------+---------+--------+------------+------------+-----------+------+
+| facno | facname | gender | dob        | doj        | mobileno  | dept |
++-------+---------+--------+------------+------------+-----------+------+
+| 44    | siva    | m      | 1989-12-23 | 2016-09-01 | 989867454 | bio  |
+| 32    | ramu    | m      | 2001-11-22 | 2021-09-07 | 898976567 | ece  |
++-------+---------+--------+------------+------------+-----------+------+
