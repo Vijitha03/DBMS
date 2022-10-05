@@ -1,0 +1,33 @@
+mysql> use coursedetails;
+Database changed
+mysql>  select * from coursedetails where scores>(select avg(scores) from coursedetails);
++----------+-----------+-------------+--------+
+| courseno | regno     | coursedesc  | scores |
++----------+-----------+-------------+--------+
+| COO1     | 192124187 | STATISTICS  |     98 |
+| COO1     | 192156521 | STATISTICS  |     84 |
+| COO2     | 192545566 | PROGRAMMING |     88 |
+| CO21     | 189756521 | DBMS        |     79 |
++----------+-----------+-------------+--------+
+mysql> select regno,assesments from coursedetails where assesments>1;
++-----------+------------+
+| regno     | assesments |
++-----------+------------+
+| 192124187 |          5 |
++-----------+------------+
+mysql> select * from faculty order by doj limit 1;
++-------+---------+--------+------------+------------+-----------+------+
+| facno | facname | gender | dob        | doj        | mobileno  | dept |
++-------+---------+--------+------------+------------+-----------+------+
+| 44    | siva    | m      | 1989-12-23 | 2016-09-01 | 989867454 | bio  |
++-------+---------+--------+------------+------------+-----------+------+
+mysql> select courseno,scores from coursedetails where scores >(select avg(scores) from coursedetails) order by courseno;
++----------+--------+
+| courseno | scores |
++----------+--------+
+| CO21     |     79 |
+| COO1     |     98 |
+| COO1     |     84 |
+| COO1     |     98 |
+| COO2     |     88 |
++----------+--------+
