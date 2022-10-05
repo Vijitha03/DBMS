@@ -81,3 +81,9 @@ mysql> select max(scores),min(scores),avg(scores) from coursedetails where cours
 +------------+-------------+
 | DBMS       |75.6667      |  
 +------------+-------------+
+mysql> select sum(scores) from coursedetails;
++-------------+
+| sum(scores) |
++-------------+
+|         513 |
++-------------+
