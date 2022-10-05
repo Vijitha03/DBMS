@@ -62,7 +62,7 @@
 
 ### EXP 07
 
-####(i)
+#### (i)
 ![image](https://user-images.githubusercontent.com/113349410/194112846-8d0d303e-f5d7-421a-a804-1dc316b684f4.png)
 #### (ii)
 ![image](https://user-images.githubusercontent.com/113349410/194115588-4b2f5348-d1e0-4881-a6d1-7219d004eddb.png)
