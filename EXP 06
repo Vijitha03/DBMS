@@ -75,3 +75,9 @@ mysql> select max(scores),min(scores),avg(scores) from coursedetails where cours
 +-------------+-------------+-------------+
 |          79 |          55 |     67.0000 |
 +-------------+-------------+-------------+
+ select coursedesc, avg(scores) from coursedetails where courseno like'C001';
++------------+-------------+
+| coursedesc | avg(scores) |
++------------+-------------+
+| DBMS       |75.6667      |  
++------------+-------------+
