@@ -70,6 +70,15 @@
 ![image](https://user-images.githubusercontent.com/113349410/194115708-f4326188-3489-4fc7-a264-2baab20ca38a.png)
 #### (iv)
 ![image](https://user-images.githubusercontent.com/113349410/194115896-81ec595e-292e-4624-973d-e55ba6557f2e.png)
+### EXP 08
+#### (i)
+![image](https://user-images.githubusercontent.com/113349410/194130844-295dec2a-a52f-474e-9b2b-3a60f6d18f01.png)
+#### (ii)
+![image](https://user-images.githubusercontent.com/113349410/194130955-209ed2ba-49df-49d6-a2d7-5cfe37cca750.png)
+#### (iii)
+![image](https://user-images.githubusercontent.com/113349410/194131110-80952b75-e149-4a11-9adb-a93e0c9c7f85.png)
+#### (iv)
+![image](https://user-images.githubusercontent.com/113349410/194131290-50c1c4b3-86c1-4534-b936-0675d3e65f66.png)
 
 
 
