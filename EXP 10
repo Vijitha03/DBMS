@@ -1,0 +1,63 @@
+mysql> create database stu_view;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use stu_view;
+Database changed
+mysql> create view stu_view as select regno,name and dob from student1;
+ERROR 1146 (42S02): Table 'stu_view.student1' doesn't exist
+mysql> create table stu_view(regno int(10),name varchar(10),dob int(15));
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> desc stu_view;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| regno | int(10)     | YES  |     | NULL    |       |
+| name  | varchar(10) | YES  |     | NULL    |       |
+| dob   | int(15)     | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.03 sec)
+
+mysql> insert into stu_view values(192120018,'lucky',19880815);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into stu_view values(192124187,'viji',19870921);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into stu_view values(192120016,'vicky',19871117);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from stu_view;
++-----------+-------+----------+
+| regno     | name  | dob      |
++-----------+-------+----------+
+| 192120018 | lucky | 19880815 |
+| 192124187 | viji  | 19870921 |
+| 192120016 | vicky | 19871117 |
++-----------+-------+----------+
+3 rows in set (0.00 sec)
+
+mysql> create view stud_views as select regno,name and dob from stu_view;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> select * from stud_views;
++-----------+--------------+
+| regno     | name and dob |
++-----------+--------------+
+| 192120018 |            0 |
+| 192124187 |            0 |
+| 192120016 |            0 |
++-----------+--------------+
+3 rows in set, 3 warnings (0.00 sec)
+
+mysql> create index regno on stu_view(regno);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show index from stu_view;
++----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| Table    | Non_unique | Key_name | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |
++----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| stu_view |          1 | regno    |            1 | regno       | A         |           3 |     NULL | NULL   | YES  | BTREE      |         |               |
++----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+1 row in set (0.00 sec)
