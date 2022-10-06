@@ -12,3 +12,9 @@ mysql> select name,courseno,scores from marksheet where scores=0;
 | geetha |      123 |      0 |
 | priya  |      879 |      0 |
 +--------+----------+--------+
+mysql> select CourseNo,CourseDesc,CourseType,FacNo,dept from courses where name='kamal';
++----------+-------------+------------+-------+------+
+| CourseNo | CourseDesc  | CourseType | FacNo | dept |
++----------+-------------+------------+-------+------+
+| 7        | electronics | A          | 98    | ece  |
++----------+-------------+------------+-------+------+
