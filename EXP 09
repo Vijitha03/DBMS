@@ -1,0 +1,7 @@
+mysql> select facno,facname,dept from faculty;
++-------+---------+------+
+| facno | facname | dept |
++-------+---------+------+
+| 32    | ramu    | ece  |
+| 44    | siva    | bio  |
++-------+---------+------+
