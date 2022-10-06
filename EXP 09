@@ -5,3 +5,10 @@ mysql> select facno,facname,dept from faculty;
 | 32    | ramu    | ece  |
 | 44    | siva    | bio  |
 +-------+---------+------+
+mysql> select name,courseno,scores from marksheet where scores=0;
++--------+----------+--------+
+| name   | courseno | scores |
++--------+----------+--------+
+| geetha |      123 |      0 |
+| priya  |      879 |      0 |
++--------+----------+--------+
