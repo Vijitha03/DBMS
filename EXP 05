@@ -128,7 +128,30 @@ mysql> select name from school where char_length(name)!=6;
 +---------+
 6 rows in set (0.00 sec)
 
+mysql> use faculty;
+Database changed
+mysql> select * from faculty;
++-------+---------+--------+------------+------------+-----------+------+
+| facno | facname | gender | dob        | doj        | mobileno  | dept |
++-------+---------+--------+------------+------------+-----------+------+
+| 32    | ramu    | m      | 2001-11-22 | 2021-09-07 | 898976567 | ece  |
+| 44    | siva    | m      | 1989-12-23 | 2016-09-01 | 989867454 | bio  |
++-------+---------+--------+------------+------------+-----------+------+
+2 rows in set (0.00 sec)
 
+mysql> select name,facno,dept,mobileno from faculty where doj>2014;
+ERROR 1054 (42S22): Unknown column 'name' in 'field list'
+mysql>  select facname,facno,dept,mobileno from faculty where doj>2014;
++---------+-------+------+-----------+
+| facname | facno | dept | mobileno  |
++---------+-------+------+-----------+
+| ramu    | 32    | ece  | 898976567 |
+| siva    | 44    | bio  | 989867454 |
++---------+-------+------+-----------+
+2 rows in set, 1 warning (0.00 sec)
+
+mysql>  select facname,facno,dept,mobileno from faculty where doj<2014;
+Empty set, 1 warning (0.00 sec)
 
 
 
