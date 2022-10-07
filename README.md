@@ -119,5 +119,8 @@
 
 ### EXp 15
 #### (i)
-![image](https://user-images.githubusercontent.com/113349410/194617603-4c351790-7fc5-4d78-9a09-786d90cb9717.png)
+![image](https://user-images.githubusercntent.com/113349410/194617603-4c351790-7fc5-4d78-9a09-786d90cb9717.png)
+#### (ii)
+![image](https://user-images.githubusercontent.com/113349410/194623182-910c16a4-1f72-43c5-9aaa-10d4618ce169.png)
+![image](https://user-images.githubusercontent.com/113349410/194623120-90947328-6fb6-4ff5-a37e-3e879f206e36.png)
 
