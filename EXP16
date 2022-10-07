@@ -1,0 +1,15 @@
+mysql> DELIMITER //
+mysql> create function customerlevel1(p_creditlimit int) returns varchar(10)
+    -> deterministic
+    -> begin
+    -> declare lvl varchar(10);
+    -> if p_creditlimit >50000 then
+    -> set lvl='platinum';
+    -> elseif (p_creditlimit <=50000 and p_creditlimit>=10000) then
+    -> set lvl='gold';
+    -> elseif(p_creditlimit <=10000) then
+    -> set lvl='silver';
+    -> end if;
+    -> return (lvl);
+    -> end
+    -> //
