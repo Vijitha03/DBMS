@@ -1,0 +1,96 @@
+mysql> create database school;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use school;
+Database changed
+mysql> create table school;
+ERROR 1113 (42000): A table must have at least 1 column
+mysql> create table school(regno int(15),name varchar(10),dept varchar(10),dob date,gender char(1),courseno varchar(10));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into school values(19876221,'padma','ece',20031108,'f','c001');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into school values(17892345,'viswa','cse',20040809.'m','c006');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''m','c006')' at line 1
+mysql> insert into school values(17892345,'viswa','cse',20040809,'m','c006');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into school values(12454668,'raju','mech',20020706,'m','c021');
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into school values(23456432,'tanmai','cse',20030411,'f','c001');
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into school values(97654567,'salman','cse',20020304,'m','c008');
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into school values(1987654,'vanitha','eee',20010908,'f','c009');
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into school values(1876545,'mahitha','cse',20040908,'f','c071');
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into school values(19212400,'laks','bio',20040420,'f','c009');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from school;
++----------+---------+------+------------+--------+----------+
+| regno    | name    | dept | dob        | gender | courseno |
++----------+---------+------+------------+--------+----------+
+| 19876221 | padma   | ece  | 2003-11-08 | f      | c001     |
+| 17892345 | viswa   | cse  | 2004-08-09 | m      | c006     |
+| 12454668 | raju    | mech | 2002-07-06 | m      | c021     |
+| 23456432 | tanmai  | cse  | 2003-04-11 | f      | c001     |
+| 97654567 | salman  | cse  | 2002-03-04 | m      | c008     |
+|  1987654 | vanitha | eee  | 2001-09-08 | f      | c009     |
+|  1876545 | mahitha | cse  | 2004-09-08 | f      | c071     |
+| 19212400 | laks    | bio  | 2004-04-20 | f      | c009     |
++----------+---------+------+------------+--------+----------+
+8 rows in set (0.00 sec)
+
+mysql> select regno,name,dob from school;
++----------+---------+------------+
+| regno    | name    | dob        |
++----------+---------+------------+
+| 19876221 | padma   | 2003-11-08 |
+| 17892345 | viswa   | 2004-08-09 |
+| 12454668 | raju    | 2002-07-06 |
+| 23456432 | tanmai  | 2003-04-11 |
+| 97654567 | salman  | 2002-03-04 |
+|  1987654 | vanitha | 2001-09-08 |
+|  1876545 | mahitha | 2004-09-08 |
+| 19212400 | laks    | 2004-04-20 |
++----------+---------+------------+
+8 rows in set (0.00 sec)
+
+mysql> select regno,name,gender from school where gender='f';
++----------+---------+--------+
+| regno    | name    | gender |
++----------+---------+--------+
+| 19876221 | padma   | f      |
+| 23456432 | tanmai  | f      |
+|  1987654 | vanitha | f      |
+|  1876545 | mahitha | f      |
+| 19212400 | laks    | f      |
++----------+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> update school set courseno='c001' where name='raju';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+mysql> select name,regno,courseno from school where gender='m'group by courseno having courseno='c001';
++------+----------+----------+
+| name | regno    | courseno |
++------+----------+----------+
+| raju | 12454668 | c001     |
++------+----------+----------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
