@@ -87,7 +87,46 @@ mysql> select name,regno,courseno from school where gender='m'group by courseno 
 +------+----------+----------+
 1 row in set (0.00 sec)
 
-mysql>
+mysql> select name from school where name like '%ma%';
++---------+
+| name    |
++---------+
+| padma   |
+| tanmai  |
+| salman  |
+| mahitha |
++---------+
+4 rows in set (0.00 sec)
+
+mysql> select name from school where name like '%sal%';
++--------+
+| name   |
++--------+
+| salman |
++--------+
+1 row in set (0.00 sec)
+
+mysql> select name from school where name like'%th%';
++---------+
+| name    |
++---------+
+| vanitha |
+| mahitha |
++---------+
+2 rows in set (0.00 sec)
+
+mysql> select name from school where char_length(name)!=6;
++---------+
+| name    |
++---------+
+| padma   |
+| viswa   |
+| raju    |
+| vanitha |
+| mahitha |
+| laks    |
++---------+
+6 rows in set (0.00 sec)
 
 
 
