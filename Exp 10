@@ -1,0 +1,59 @@
+mysql> use stu_view;
+Database changed
+mysql> create table stu_view (regno int(10),name varchar (10),dob int(10));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc stu_view;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| regno | int(10)     | YES  |     | NULL    |       |
+| name  | varchar(10) | YES  |     | NULL    |       |
+| dob   | int(10)     | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+
+mysql> insert into stu_view values(19678543,'ramu',2003);
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into stu_view values(87654376,'ravi',2004);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into stu_view values(14325678,'tanya',2001);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from stu_view;
++----------+-------+------+
+| regno    | name  | dob  |
++----------+-------+------+
+| 19678543 | ramu  | 2003 |
+| 87654376 | ravi  | 2004 |
+| 14325678 | tanya | 2001 |
++----------+-------+------+
+3 rows in set (0.00 sec)
+
+mysql> create view stu_view as select regno,name and dob from stu_view;
+ERROR 1050 (42S01): Table 'stu_view' already exists
+mysql> create view stu_views as select regno,name and dob from stu_view;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from stu_views;
++----------+--------------+
+| regno    | name and dob |
++----------+--------------+
+| 19678543 |            0 |
+| 87654376 |            0 |
+| 14325678 |            0 |
++----------+--------------+
+3 rows in set, 3 warnings (0.00 sec)
+
+mysql> create index regno on stu_view(regno);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show index from stu_view;
++----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| Table    | Non_unique | Key_name | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |
++----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| stu_view |          1 | regno    |            1 | regno       | A         |           3 |     NULL | NULL   | YES  | BTREE      |         |               |
++----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
