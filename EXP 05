@@ -153,6 +153,11 @@ mysql>  select facname,facno,dept,mobileno from faculty where doj>2014;
 mysql>  select facname,facno,dept,mobileno from faculty where doj<2014;
 Empty set, 1 warning (0.00 sec)
 
-
+mysql> select courseno from school where hallno=00;
++----------+
+| courseno |
++----------+
+| c071     |
++----------+
 
 
