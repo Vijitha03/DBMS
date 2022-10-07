@@ -1,0 +1,17 @@
+mysql> use colleges;
+Database changed
+mysql> CREATE PROCEDURE colleges()
+    -> select * from colleges;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> call colleges();
++------+-------+-----------+--------+------+
+| sno  | name  | regno     | branch | age  |
++------+-------+-----------+--------+------+
+|    1 | lucky | 192120018 | bio    |   22 |
+|    2 | john  |  12356784 | eee    |   20 |
+|    3 | satya | 192321431 | ece    |   19 |
++------+-------+-----------+--------+------+
+3 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
