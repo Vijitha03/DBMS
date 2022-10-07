@@ -39,6 +39,15 @@
 #### (vi)
 ![image](https://user-images.githubusercontent.com/113349410/193774272-98c23fac-c30d-44f3-a689-7b151349b90a.png)
 
+### EXP05
+#### (i)
+![image](https://user-images.githubusercontent.com/113349410/194604919-94f48451-24ae-4fbc-b611-ceeea0a21a09.png)
+#### (ii)
+![image](https://user-images.githubusercontent.com/113349410/194605008-62464e02-81a3-417f-beb9-b4c990da3bd8.png)
+#### (iii)
+![image](https://user-images.githubusercontent.com/113349410/194605107-fcfa08bc-2c76-4c1b-a4a3-48540bd232e9.png)
+
+
 
 ### EXP 06;
 #### (i)
