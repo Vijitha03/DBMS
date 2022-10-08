@@ -1,0 +1,48 @@
+mysql> use student;
+Database changed
+mysql> desc student;
+ERROR 1146 (42S02): Table 'student.student' doesn't exist
+mysql> use studentt;
+Database changed
+mysql> desc studentt;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| reg_no    | int(10)     | NO   | PRI | 0       |       |
+| name      | varchar(15) | YES  |     | NULL    |       |
+| gender    | char(1)     | YES  |     | NULL    |       |
+| dob       | date        | YES  |     | NULL    |       |
+| mobile_no | int(10)     | YES  |     | NULL    |       |
+| city      | varchar(15) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+6 rows in set (0.02 sec)
+
+mysql> create user stu;
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> grant all on studentt to stu;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show grants for stu;
++------------------------------------------------------------+
+| Grants for stu@%                                           |
++------------------------------------------------------------+
+| GRANT USAGE ON *.* TO 'stu'@'%'                            |
+| GRANT ALL PRIVILEGES ON `studentt`.`studentt` TO 'stu'@'%' |
++------------------------------------------------------------+
+2 rows in set (0.00 sec)
+
+mysql> revoke all on studentt from stu;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show grant for stu;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'grant for stu' at line 1
+mysql> shows grants for stu;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'shows grants for stu' at line 1
+mysql> show grants for stu;
++---------------------------------+
+| Grants for stu@%                |
++---------------------------------+
+| GRANT USAGE ON *.* TO 'stu'@'%' |
++---------------------------------+
+1 row in set (0.00 sec)
