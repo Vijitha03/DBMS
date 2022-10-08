@@ -123,7 +123,8 @@
  ### EXP 13
  ![image](https://user-images.githubusercontent.com/113349410/194599064-f748defb-5168-4f74-af36-757815926c82.png)
 ### EXP 14
-![image](https://user-images.githubusercontent.com/113349410/194684563-bba95314-5584-46c5-8f67-68d7a10c75d9.png)
+![image](https://user-images.githubusercontent.com/113349410/194685188-1d0ad417-46d5-4e6b-83db-40aafeef50b2.png)
+![image](https://user-images.githubusercontent.com/113349410/194685201-936d0b62-41f8-4ef0-8e67-3987fdf5b79d.png)
 
 ### EXp 15
 #### (i)
