@@ -1,4 +1,4 @@
-mysql>  use db;
+mysql> use db;
 Database changed
 mysql> delimiter //
 mysql> create procedure test_mysql_while_loop()
@@ -14,7 +14,8 @@ mysql> create procedure test_mysql_while_loop()
     -> select str;
     -> end
     -> //
-Query OK, 0 rows affected (0.02 sec)
+Query OK, 0 rows affected (0.01 sec)
+
 mysql> call test_mysql_while_loop()//
 +------------+
 | str        |
@@ -24,11 +25,12 @@ mysql> call test_mysql_while_loop()//
 1 row in set (0.00 sec)
 
 Query OK, 0 rows affected (0.01 sec)
+
 mysql> create procedure dorepeat(p1 int)begin set @x=0;repeat set @x=@x+1;until @x>p1 end repeat;end//
-Query OK, 0 rows affected (0.00 sec)
+Query OK, 0 rows affected (0.01 sec)
 
 mysql> call dorepeat(4001)//
-Query OK, 0 rows affected (0.00 sec)
+Query OK, 0 rows affected (0.01 sec)
 
 mysql> select @x;
     -> //
@@ -38,3 +40,5 @@ mysql> select @x;
 | 4002 |
 +------+
 1 row in set (0.00 sec)
+
+mysql>
